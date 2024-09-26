@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WeatherAppUsingRetrofitApi</string>
+    <string name="temp">31<sup>°C</sup></string>
+    <string name="min_temp">Min :23.22<sup>°C</sup></string>
+    <string name="max_temp">Max :23.22<sup>°C</sup></string>
+</resources>
