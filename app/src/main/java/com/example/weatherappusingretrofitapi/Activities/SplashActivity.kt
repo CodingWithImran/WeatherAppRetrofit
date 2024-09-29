@@ -1,10 +1,11 @@
-package com.example.weatherappusingretrofitapi
+package com.example.weatherappusingretrofitapi.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.example.weatherappusingretrofitapi.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

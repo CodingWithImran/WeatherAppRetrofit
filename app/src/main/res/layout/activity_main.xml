@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sunny_background"
-    tools:context=".MainActivity">
+    tools:context=".Activities.MainActivity">
 
     <SearchView
         android:id="@+id/searchView"
@@ -28,7 +28,6 @@
         android:drawableLeft="@drawable/loctaion"
         android:drawablePadding="5dp"
         android:fontFamily="@font/merriweathersans_regular"
-        android:text="Delhi"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/searchView"
         app:layout_constraintHorizontal_bias="0.498"
@@ -94,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/min_temp" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/today"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -107,15 +106,15 @@
         app:layout_constraintTop_toBottomOf="@+id/max_temp2" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/today_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="24 January 2024"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintEnd_toEndOf="@+id/today"
+        app:layout_constraintStart_toStartOf="@+id/today"
+        app:layout_constraintTop_toBottomOf="@+id/today" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -125,7 +124,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9">
+        app:layout_constraintTop_toBottomOf="@+id/today_date">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -146,6 +145,7 @@
                     app:srcCompat="@drawable/humidity" />
 
                 <TextView
+                    android:id="@+id/humidity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -155,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="TextView"
+                    android:text="Humidity"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -173,6 +173,7 @@
                     app:srcCompat="@drawable/humidity" />
 
                 <TextView
+                    android:id="@+id/windspeed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -182,7 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="TextView"
+                    android:text="Wind Speed"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -200,6 +201,7 @@
                     app:srcCompat="@drawable/humidity" />
 
                 <TextView
+                    android:id="@+id/conditions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -209,7 +211,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="TextView"
+                    android:text="Conditions"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -227,6 +229,7 @@
                     app:srcCompat="@drawable/humidity" />
 
                 <TextView
+                    android:id="@+id/sunrise"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -236,7 +239,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="TextView"
+                    android:text="Sunrise"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -254,6 +257,7 @@
                     app:srcCompat="@drawable/humidity" />
 
                 <TextView
+                    android:id="@+id/sunset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -263,7 +267,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="TextView"
+                    android:text="Sunset"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -281,6 +285,7 @@
                     app:srcCompat="@drawable/humidity" />
 
                 <TextView
+                    android:id="@+id/sea"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -290,7 +295,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="TextView"
+                    android:text="sea"
                     android:textSize="10sp" />
             </LinearLayout>
 
